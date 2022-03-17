@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "python-twonms-config"
-version = "0.1.0"
+version = "0.1.1"
 homepage = "https://github.com/mwallraf/python_twonms_config"
 description = "Python package to manage configs based on OmegaConf."
 authors = ["Maarten Wallraf <mwallraf@2nms.com>"]
