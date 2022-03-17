@@ -140,7 +140,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    python_twonms_config
+    twonms.config
   </div>
 </a>
       </div>
@@ -201,18 +201,6 @@
 
 
   <li class="md-tabs__item">
-    <a href="../api/" class="md-tabs__link">
-      modules
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
     <a href="../contributing/" class="md-tabs__link">
       contributing
     </a>
@@ -239,6 +227,18 @@
   <li class="md-tabs__item">
     <a href="../history/" class="md-tabs__link">
       history
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/" class="md-tabs__link">
+      api
     </a>
   </li>
 
@@ -282,7 +282,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    python_twonms_config
+    twonms.config
   </div>
 </a>
     </div>
@@ -358,27 +358,125 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configcreate-object" class="md-nav__link">
+    Config.create() object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-parameters" class="md-nav__link">
+    Defining parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programatically-defined-parameters" class="md-nav__link">
+    programatically defined parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-files-defined-in-yaml-format" class="md-nav__link">
+    configuration files defined in yaml format
+  </a>
+  
+    <nav class="md-nav" aria-label="configuration files defined in yaml format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    environment variables
+  </a>
+  
+    <nav class="md-nav" aria-label="environment variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dotenv-variables" class="md-nav__link">
+    dotenv variables
+  </a>
+  
+    <nav class="md-nav" aria-label="dotenv variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-arguments" class="md-nav__link">
+    cli arguments
+  </a>
+  
+    <nav class="md-nav" aria-label="cli arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
-        modules
-      </a>
     </li>
   
 
@@ -428,6 +526,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        api
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -455,6 +568,119 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configcreate-object" class="md-nav__link">
+    Config.create() object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-parameters" class="md-nav__link">
+    Defining parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programatically-defined-parameters" class="md-nav__link">
+    programatically defined parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-files-defined-in-yaml-format" class="md-nav__link">
+    configuration files defined in yaml format
+  </a>
+  
+    <nav class="md-nav" aria-label="configuration files defined in yaml format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    environment variables
+  </a>
+  
+    <nav class="md-nav" aria-label="environment variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dotenv-variables" class="md-nav__link">
+    dotenv variables
+  </a>
+  
+    <nav class="md-nav" aria-label="dotenv variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-arguments" class="md-nav__link">
+    cli arguments
+  </a>
+  
+    <nav class="md-nav" aria-label="cli arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -478,7 +704,239 @@
                 
                 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>To use Python 2NMS config manager in a project</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    import python_twonms_config
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">env</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="configcreate-object">Config.create() object<a class="headerlink" href="#configcreate-object" title="Permanent link">&para;</a></h3>
+<p>A configuration object is created by calling the <code>Config.create()</code> method. This actually a wrapper around the <code>OmegaConf.create()</code>method.</p>
+<p>The method takes the following parameters:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>path: (optional) the path name where yaml config files can be found,
+        default=./conf
+
+conf: (optional) the filename including extension that should be loaded
+        if blank then the environmont default config file will be loaded
+        if the &quot;env&quot; variable is given and the file exists
+        default=None
+
+env: (optional) if the application is using the standard config file
+        naming conventions then the env variable can be specified and the
+        correct config file is automatically loaded
+        default=PROD
+
+allowed_envvars: (optional) a list of allowed environment variables that can be loaded
+                    via system env vars
+
+required_config: (optional) dictionary or string with all the required parameters,
+                    meaning that these parameters will always be present in
+                    the Config object
+                    If this is a string then it should be in yaml format
+</code></pre></div>
+</td></tr></table>
+<h3 id="defining-parameters">Defining parameters<a class="headerlink" href="#defining-parameters" title="Permanent link">&para;</a></h3>
+<p>Parameters can be defined in different ways and in a predefined order. Multiple ways can be used at the same time, for example a yaml config file exists together with environment variables and cli arguments.</p>
+<p>In the end a single OmegaConf object will be created combining all parameters.</p>
+<p>Import order:</p>
+<ul>
+<li>programmatically defined default values</li>
+<li>environment variables</li>
+<li>dotenv files</li>
+<li>configuration files in YAML format</li>
+<li>cli arguments</li>
+</ul>
+<h4 id="programatically-defined-parameters">programatically defined parameters<a class="headerlink" href="#programatically-defined-parameters" title="Permanent link">&para;</a></h4>
+<p>It's easy to define defaults for your application by defining a dictionary or list or yaml string. Check the OmegaConf documentation for more details.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="n">DEFAULT_CONFIG</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">name: maarten</span>
+<span class="s2">debug: true</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">required_config</span><span class="o">=</span><span class="n">DEFAULT_CONFIG</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="configuration-files-defined-in-yaml-format">configuration files defined in yaml format<a class="headerlink" href="#configuration-files-defined-in-yaml-format" title="Permanent link">&para;</a></h4>
+<p>It is possible to store all your application parameters in yaml files. You can specifically refer to a file or you can use the default filenames and then the <code>environment</code> parameter will define which config file will be loaded (if it exists).</p>
+<p>If no filename is specified and no <code>environment</code> parameter is defined then the filename <code>./conf/producation.yaml</code> will be loaded automatically if it exists.</p>
+<p>Default config folder = <code>./conf</code></p>
+<p>Default config filenames and matching environment variable:</p>
+<table>
+<thead>
+<tr>
+<th>environment</th>
+<th>config file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PROD </td>
+<td> production.yaml</td>
+</tr>
+<tr>
+<td>DEV</td>
+<td>development.yaml</td>
+</tr>
+<tr>
+<td>TEST</td>
+<td>test.yaml</td>
+</tr>
+<tr>
+<td>DEBUG</td>
+<td>debug.yaml</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">maarten</span><span class="w"></span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">production configuration file</span><span class="w"></span>
+<span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test.py</span><span class="w"></span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">usage</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test.py --help</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p>Usage:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="c1"># create a config object with default parameters</span>
+<span class="c1"># this will search for the file ./conf/production.yaml</span>
+<span class="n">config_default</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">config_default</span><span class="o">.</span><span class="n">script</span><span class="o">.</span><span class="n">usage</span><span class="p">)</span>
+
+<span class="c1"># create a config object by specifying the debug environment</span>
+<span class="c1"># this will search for the file ./conf/debug.yaml</span>
+<span class="n">config_debug</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">required_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;env&quot;</span><span class="p">:</span> <span class="s2">&quot;DEBUG&quot;</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">config_debug</span><span class="o">.</span><span class="n">script</span><span class="o">.</span><span class="n">usage</span><span class="p">)</span>
+
+<span class="c1"># create a config object with custom config folder and file</span>
+<span class="n">config_custom</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">&quot;./customfolder&quot;</span><span class="p">,</span> <span class="n">conf</span><span class="o">=</span><span class="s2">&quot;mycustomconfig.yaml&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">config_custom</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="environment-variables">environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h4>
+<p>Environment variables can be defined via system environment variables or via <code>.env</code> files which will be loaded automatically if it exists.</p>
+<p>To prevent all existing environment variables to be loaded into your configuration object, you'll have to specify which variables are allowed by specifying the <code>allowed_envvars</code>parameter in the <code>create()</code> method.</p>
+<h5 id="example_1">Example:<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># simulate system environment variable</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;maarten)</span>
+
+<span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">allowed_envvars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="dotenv-variables">dotenv variables<a class="headerlink" href="#dotenv-variables" title="Permanent link">&para;</a></h4>
+<p>Similar as with system environment variables you can also define envvars in a <code>.env</code> file, locally to the main script. The difference with system environment variables is that there is no need to define the allowed parameters, all parameters defined in the .env file will be loaded.</p>
+<h5 id="example_2">Example:<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
+<p><strong>.env file</strong></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="go">name=maarten</span>
+<span class="go">DEBUG=true</span>
+</code></pre></div>
+</td></tr></table>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="cli-arguments">cli arguments<a class="headerlink" href="#cli-arguments" title="Permanent link">&para;</a></h4>
+<p>The last method to load parameters is to use cli script arguments. All arguments will be loaded.</p>
+<h5 id="example_3">Example:<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
+<p><strong> myscript.py </strong></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">twonms.config</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">env</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="gp"># </span>start the script with extra arguments
+
+<span class="go">python myscript.py env=DEBUG</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -514,13 +972,13 @@
           </a>
         
         
-          <a href="../api/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../contributing/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                modules
+                contributing
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
