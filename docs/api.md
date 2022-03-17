@@ -1,1 +1,1 @@
-::: python_twonms_config
+::: twonms

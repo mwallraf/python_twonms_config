@@ -1,6 +1,6 @@
 [tool]
 [tool.poetry]
-name = "python_twonms_config"
+name = "python-twonms-config"
 version = "0.1.0"
 homepage = "https://github.com/mwallraf/python_twonms_config"
 description = "Python package to manage configs based on OmegaConf."
@@ -19,7 +19,7 @@ classifiers=[
     'Programming Language :: Python :: 3.9',
 ]
 packages = [
-    { include = "python_twonms_config" },
+    { include = "twonms", from = "python_twonms_config" },
     { include = "tests", format = "sdist" },
 ]
 
@@ -45,6 +45,10 @@ twine  = { version = "^3.3.0", optional = true}
 mkdocs-autorefs = {version = "0.1.1", optional = true}
 pre-commit = {version = "^2.12.0", optional = true}
 toml = {version = "^0.10.2", optional = true}
+livereload = "^2.6.3"
+omegaconf = "^2.1.1"
+loguru = "^0.6.0"
+python-dotenv = "^0.19.2"
 
 [tool.poetry.extras]
 test = [
@@ -67,8 +71,6 @@ doc = [
     "mkdocs-autorefs"
     ]
 
-[tool.poetry.scripts]
-python_twonms_config = 'python_twonms_config.cli:main'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

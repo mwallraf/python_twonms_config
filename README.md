@@ -1,6 +1,5 @@
 # Python 2NMS config manager
 
-
 <p align="center">
 <a href="https://pypi.python.org/pypi/python_twonms_config">
     <img src="https://img.shields.io/pypi/v/python_twonms_config.svg"
@@ -17,17 +16,27 @@
 
 </p>
 
+Python package to manage application configurations. This is a wrapper around the OmegaConf create function.
 
-Python package to manage configs based on OmegaConf
+This package makes it easy to define parameters for your application. It's possible to define parameters in different ways (in order of precedence):
 
+-   programmatically defined default values
+-   environment variables/dotenv files
+-   configuration files in YAML format
+-   cli arguments
 
-* Free software: MIT
-* Documentation: <https://python-twonms-config.readthedocs.io>
+## Documentation
 
+Check out the [Github Docs](https://mwallraf.github.io/python_twonms_config/)
 
 ## Features
 
-* TODO
+-   generates an [OmegaConf](https://omegaconf.readthedocs.io) dictionary object
+-   supports environment variables
+-   supports dotenv
+-   reads yaml config files
+-   supports cli parameters
+-   allows programmatic initialization of parameters
 
 ## Credits
 
