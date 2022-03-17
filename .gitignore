@@ -106,3 +106,7 @@ ENV/
 
 # mkdocs build dir
 site/
+
+# test data
+conf/
+z.py
