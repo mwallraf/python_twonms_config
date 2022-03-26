@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#twonms" class="md-skip">
+        <a href="#twonms.config" class="md-skip">
           Skip to content
         </a>
       
@@ -414,21 +414,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#twonms" class="md-nav__link">
-    twonms
+  <a href="#twonms.config" class="md-nav__link">
+    twonms.config
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#twonms.config" class="md-nav__link">
-    config
-  </a>
-  
-    <nav class="md-nav" aria-label="config">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#twonms.config.config" class="md-nav__link">
     config
   </a>
@@ -497,11 +489,6 @@
   <a href="#twonms.config.config.Config.create" class="md-nav__link">
     create()
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -546,21 +533,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#twonms" class="md-nav__link">
-    twonms
+  <a href="#twonms.config" class="md-nav__link">
+    twonms.config
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#twonms.config" class="md-nav__link">
-    config
-  </a>
-  
-    <nav class="md-nav" aria-label="config">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#twonms.config.config" class="md-nav__link">
     config
   </a>
@@ -641,11 +620,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
@@ -667,30 +641,17 @@
                   <h1>api</h1>
                 
                 <div class="doc doc-object doc-module">
-<h3 class="hidden-toc" href="#twonms" id="twonms" style="visibility: hidden; position: absolute;">
-        <a class="headerlink" href="#twonms" title="Permanent link">&para;</a></h3>
+<h3 class="hidden-toc" href="#twonms.config" id="twonms.config" style="visibility: hidden; position: absolute;">
+        <a class="headerlink" href="#twonms.config" title="Permanent link">&para;</a></h3>
 <div class="doc doc-contents first">
-<p>Top-level package for Python 2NMS config manager.</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-module">
-<h3 class="doc doc-heading" id="twonms.config">
-
-        <code>config</code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-      <a class="headerlink" href="#twonms.config" title="Permanent link">&para;</a></h3>
-<div class="doc doc-contents ">
-<div class="doc doc-children">
-<div class="doc doc-object doc-module">
-<h4 class="doc doc-heading" id="twonms.config.config">
+<h3 class="doc doc-heading" id="twonms.config.config">
 
         <code>config</code>
 
 
-      <a class="headerlink" href="#twonms.config.config" title="Permanent link">&para;</a></h4>
+      <a class="headerlink" href="#twonms.config.config" title="Permanent link">&para;</a></h3>
 <div class="doc doc-contents ">
 <p>twonms.config module to manage application configuration</p>
 <p>The module uses OmegaConf to combine and read configuration items.</p>
@@ -717,12 +678,12 @@ my_other_param = config.my_other_param
 </div>
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
-<h5 class="doc doc-heading" id="twonms.config.config.Config">
+<h4 class="doc doc-heading" id="twonms.config.config.Config">
 
         <code>Config</code>
 
 
-      <a class="headerlink" href="#twonms.config.config.Config" title="Permanent link">&para;</a></h5>
+      <a class="headerlink" href="#twonms.config.config.Config" title="Permanent link">&para;</a></h4>
 <div class="doc doc-contents ">
 <p>Main class of the module</p>
 <p>Manages application configuration parameters and this actually
@@ -758,7 +719,7 @@ from different sources (envvars, cli, conf files)</p>
 </table>
 <div class="doc doc-children">
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.cli_config">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.cli_config">
 
         <code class="highlight">
 cli_config: <span class="n">OmegaConf</span>        </code>
@@ -768,14 +729,14 @@ cli_config: <span class="n">OmegaConf</span>        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.cli_config" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.cli_config" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property for the CLI variables config</p>
 <p>Returns the OmegaConf object</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.conf">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.conf">
 
         <code class="highlight">
 conf        </code>
@@ -785,7 +746,7 @@ conf        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.conf" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.conf" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property to return the yaml config filename</p>
 <p>If the config file is defined then return it
@@ -794,7 +755,7 @@ If not then return None</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.env">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.env">
 
         <code class="highlight">
 env        </code>
@@ -804,7 +765,7 @@ env        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.env" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.env" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property for the environment variable</p>
 <p>Returns either a predefined environment (DEV, PROD, DEBUG, TEST) or
@@ -812,7 +773,7 @@ None</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.environment_config">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.environment_config">
 
         <code class="highlight">
 environment_config: <span class="n">OmegaConf</span>        </code>
@@ -822,14 +783,14 @@ environment_config: <span class="n">OmegaConf</span>        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.environment_config" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.environment_config" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property for the environment variables config</p>
 <p>Returns the OmegaConf object</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.file_config">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.file_config">
 
         <code class="highlight">
 file_config: <span class="n">OmegaConf</span>        </code>
@@ -839,13 +800,13 @@ file_config: <span class="n">OmegaConf</span>        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.file_config" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.file_config" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property that returs the OmegaConf based on the yaml configuration file</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.path">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.path">
 
         <code class="highlight">
 path        </code>
@@ -855,7 +816,7 @@ path        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.path" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.path" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property for path variable</p>
 <p>Returns the path if the folder exists,
@@ -863,7 +824,7 @@ otherwise returns None</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.required_config">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.required_config">
 
         <code class="highlight">
 required_config: <span class="n">OmegaConf</span>        </code>
@@ -873,14 +834,14 @@ required_config: <span class="n">OmegaConf</span>        </code>
       <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.required_config" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.required_config" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Property for the required config</p>
 <p>Returns the OmegaConf</p>
 </div>
 </div>
 <div class="doc doc-object doc-method">
-<h6 class="doc doc-heading" id="twonms.config.config.Config.create">
+<h5 class="doc doc-heading" id="twonms.config.config.Config.create">
 
         <code class="highlight language-python">
 create<span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">'./conf'</span><span class="p">,</span> <span class="n">conf</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s1">'PROD'</span><span class="p">,</span> <span class="n">required_config</span><span class="o">=</span><span class="p">{},</span> <span class="n">allowed_envvars</span><span class="o">=</span><span class="p">[</span><span class="s1">'environment'</span><span class="p">,</span> <span class="s1">'debug'</span><span class="p">])</span>        </code>
@@ -889,7 +850,7 @@ create<span class="p">(</span><span class="n">path</span><span class="o">=</span
       <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
   </span>
 
-      <a class="headerlink" href="#twonms.config.config.Config.create" title="Permanent link">&para;</a></h6>
+      <a class="headerlink" href="#twonms.config.config.Config.create" title="Permanent link">&para;</a></h5>
 <div class="doc doc-contents ">
 <p>Creates the Config object</p>
 <p>This method should be used as the constructor</p>
@@ -978,7 +939,7 @@ Config.create(required_config=REQUIRED_CONFIG_PARAMETERS,
 </code></pre>
 </div>
 <details class="quote">
-<summary>Source code in <code>twonms/config/config.py</code></summary>
+<summary>Source code in <code>config/config.py</code></summary>
 <div class="highlight">
 <pre><span></span><code><span class="nd">@staticmethod</span>
 <span class="k">def</span> <span class="nf">create</span><span class="p">(</span>
@@ -1047,9 +1008,6 @@ Config.create(required_config=REQUIRED_CONFIG_PARAMETERS,
 </code></pre>
 </div>
 </details>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
