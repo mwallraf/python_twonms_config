@@ -1,1 +1,1 @@
-::: twonms
+::: twonms.config
